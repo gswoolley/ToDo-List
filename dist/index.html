@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Webpack</title>
+  </head>
+  <body>
+    <div id="content">
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand"
+          
+            ><img
+              src="./images/pizza.png"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />ToDo</a
+          >
+          <ul class="navbar nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active text-light">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-light">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="d-flex p-2 gap-3 bd-highlight">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-bs-whatever="@getbootstrap"
+      >
+        Add Task +
+      </button>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New Task</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="addTask">
+                <div class="form-group">
+                  <label for="task-title" class="col-form-label">Task:</label>
+                  <input type="text" class="form-control" id="task-title" />
+                </div>
+                <div class="form-group">
+                  <label for="task-date" class="col-form-label"
+                    >Due Date:</label
+                  >
+                  <input type="text" class="form-control" id="task-date" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#ProjectModal"
+        data-bs-whatever="@getbootstrap"
+      >
+        Add Project +
+      </button>
+
+      <div
+        class="modal fade"
+        id="ProjectModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New Project</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="addProject">
+                <div class="form-group">
+                  <label for="project-date" class="col-form-label"
+                    >Title:</label
+                  >
+                  <input type="text" class="form-control" id="project-title" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <ul class="nav nav-pills ms 2">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </li>
+      
+      <div class = "container ms-2"><h1>Projects</h1>
+      </div>
+      <div class = 'task container ms-8'>
+      </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
